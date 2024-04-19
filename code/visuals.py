@@ -1,10 +1,11 @@
+"""Creates plot for """
 from matplotlib import pyplot as plt
 import json
 
 
 def get_data():
     data_path = "../data/complete_time_series_points.json"
-    with open(data_path, 'r') as file:
+    with open(data_path, 'r', encoding="ascii") as file:
         data = json.load(file)
         return data
     
